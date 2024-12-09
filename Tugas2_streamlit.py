@@ -4,7 +4,7 @@ import pandas as pd
 st.title("Sentiment Analysis")
 
 
-st.heading("Import Data X")
+st.header("Import Data X")
 st.markdown("First of all, Data from X (used to be called twitter) was scrapped using tweepy packages. The data was  about 50 sentiment of manchester city. ")
 
 tweets = pd.read_csv("pep.csv")
@@ -14,7 +14,7 @@ st.caption("Scrapped from twitter")
 
 st.header("Building a Model")
 
-st.subheading("Preprocessing Data")
+st.subheader("Preprocessing Data")
 st.markdown("to make a sentiment analysis, we need to make the model first. In this analysis, model that will be used is from movie_data. To load the dataset, will be use Pandas Dataframe. Before begin to build the model, we need to clean the data, in this particular analysis the name is preprocessing text. Preprocessing text is a step to remove everything except the point of thesentence. Preprocessing text incluces several subtasks, such aas removing HTML tags, converst to lowercase, removing non-alphanumeric characters, extracting emoticons, and tokenizing words. Dataset will be splited into 80% of training and 20% for testing. The data will be splitted using scikit-learn. The code fot preprocessing process in below")
 
 code_preprocessing = '''
@@ -44,7 +44,7 @@ df['clean_review'] = df['review'].apply(preprocessor)
 
 st.code(code_preprocessing)
 
-st.subheading("Split Data")
+st.subheader("Split Data")
 st.markdown("After the data already preprocessed, the data are ready to be trained into model. The data will be splitted into two, train data and testing. Usually, the test data was 80% of whole data, and the rest of it is test data. The model was build from 80% data. ")
 
 
@@ -56,7 +56,7 @@ X_train, X_test, y_train, y_test = train_test_split(df['clean_review'], df['sent
 '''
 st.code(code_traintest)
 
-st.subheading("TF-IDF and Logistic Regression")
+st.subheader("TF-IDF and Logistic Regression")
 st.markdown("To make the model we will use Term Frequency-Inverse Document Frecuency or TF-IDF methods. The text data is transform into TF-IDF. TF-IDF is a method that calculate how relevant a word in a series or corpus is to a text. The meaning increases proportionally to the number of times in the text a word appears but is compensated by the word frequency in the data.")
 
 code_tfidf = '''
@@ -91,7 +91,7 @@ st.code(code_trainlog)
 st.image("logisticmodel.png")
 
 
-st.subheading("Evaluate Model")
+st.subheader("Evaluate Model")
 st.markdown("after the logistic regression was built, let's evaluate out model. ")
 
 code_evaluation = '''
@@ -122,7 +122,7 @@ st.image("evaluation.png")
 
 st.markdown("The evaluation of the model: The accuracy of model is 89,56%. the true positive model is 88,21%. all the true positive predictions in the test set is 91,16%. The f1 score is 0,8966")
 
-st.heading("Apply Moddel to the Data")
+st.header("Apply Moddel to the Data")
 
 st.markdown("from the model above, we will use that model to predict our own sentiment analysis from X data about manchester city.")
 
