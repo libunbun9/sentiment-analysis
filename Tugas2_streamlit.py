@@ -81,7 +81,7 @@ lr.fit(X_train_tfidf, y_train)
 '''
 st.code(code_trainlog)
 
-st.image(r"C:\Users\yippi\OneDrive\Pictures\Screenshots\Screenshot 2024-12-09 054121.png")
+st.image("logisticmodel.png")
 
 st.markdown("after the logistic regression was built, let's evaluate out model. ")
 
@@ -109,7 +109,7 @@ print(classification_report(y_test, y_pred))
 '''
 st.code(code_evaluation)
 
-st.image(r"C:\Users\yippi\OneDrive\Pictures\Screenshots\Screenshot 2024-12-08 225239.png")
+st.image("evaluation.png")
 
 st.markdown("The evaluation of the model: The accuracy of model is 89,56%. the true positive model is 88,21%. all the true positive predictions in the test set is 91,16%. The f1 score is 0,8966")
 
