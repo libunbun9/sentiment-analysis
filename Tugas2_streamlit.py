@@ -145,7 +145,7 @@ df['predicted_sentiment'] = all_data_predictions
 '''
 st.code(code_predict)
 
-predict_sentiment = pd.read_csv("https://github.com/libunbun9/sentiment-analysis/blob/main/manchestercity.csv")
+predict_sentiment = pd.read_csv("manchestercity.csv")
 st.dataframe(predict_sentiment)
 
 st.markdown("Yayyy, we did it! we succesfully predict sentiment analysis. See you next ime :>")
