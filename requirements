@@ -2,3 +2,4 @@ pip
 streamlit
 openpyxl
 pandas
+matplotlib.pyplot
