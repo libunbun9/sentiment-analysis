@@ -5,7 +5,7 @@ st.title("Sentiment Analysis")
 
 st.markdown("First of all, Data from X (used to be called twitter) was scrapped using tweepy packages. The data was  about 50 sentiment of manchester city. ")
 
-tweets = pd.read_csv(r'C:\Users\yippi\Documents\kuliah ali\7_visual data\pep.csv')
+tweets = pd.read_csv(r'https://github.com/libunbun9/sentiment-analysis/blob/main/pep.csv')
 st.dataframe(tweets)
 st.caption("Scrapped from twitter")
 
@@ -145,7 +145,7 @@ df['predicted_sentiment'] = all_data_predictions
 '''
 st.code(code_predict)
 
-predict_sentiment = pd.read_csv(r"C:\Users\yippi\Documents\kuliah ali\7_visual data\manchestercity.csv")
+predict_sentiment = pd.read_csv(r"https://github.com/libunbun9/sentiment-analysis/blob/main/manchestercity.csv")
 st.dataframe(predict_sentiment)
 
 st.markdown("Yayyy, we did it! we succesfully predict sentiment analysis. See you next ime :>")
