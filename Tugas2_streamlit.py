@@ -5,7 +5,7 @@ st.title("Sentiment Analysis")
 
 st.markdown("First of all, Data from X (used to be called twitter) was scrapped using tweepy packages. The data was  about 50 sentiment of manchester city. ")
 
-tweets = pd.read_csv('https://github.com/libunbun9/sentiment-analysis/blob/main/pep.csv')
+tweets = pd.read_csv("https://github.com/libunbun9/sentiment-analysis/blob/main/pep.csv")
 st.dataframe(tweets)
 st.caption("Scrapped from twitter")
 
