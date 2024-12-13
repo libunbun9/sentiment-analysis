@@ -122,7 +122,7 @@ st.image("evaluation.png")
 
 st.markdown("The evaluation of the model: The accuracy of model is 89,56%. the true positive model is 88,21%. all the true positive predictions in the test set is 91,16%. The f1 score is 0,8966")
 
-st.header("Apply Moddel to the Data")
+st.header("Apply Model to the Data")
 
 st.markdown("from the model above, we will use that model to predict our own sentiment analysis from X data about manchester city.")
 
